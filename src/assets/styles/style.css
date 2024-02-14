@@ -1,0 +1,157 @@
+:root {
+    --primaryColor: #0c5adb;
+    --headingColor: #232323;
+    --textColor: ##616161;
+}   
+.error-color {
+    color: #c20302;
+}
+.custom-container {
+    padding: 0 60px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.w-100px {
+    min-width: 60px;
+}
+.show-loader {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+}
+.custom-container.child-center {
+    justify-content: center;
+}
+.search-products {
+    width: 60%;
+    height: 60px;
+    border: 1px solid #dddddd;
+    border-radius: 6px;
+    padding-left: 16px;
+    font-size: 24px;
+}
+.search-products::placeholder {
+    color: #dddddd;
+}
+.search-products:focus {
+    outline: 0;
+}
+/* Code For Top Header*/
+.header-container-fluid {
+    background-color: var(--primaryColor);
+    height: 40px;
+    display: flex;
+        align-items: center;
+        padding: 0 80px;
+}
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.personal-info {
+    width: 40%;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.personal-info div {
+    color: #ffffff;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    margin-right: 24px;
+}
+.personal-info div span {
+    font-size: 20px;
+    margin-right: 12px;
+}
+.offer {
+    width: 35%;
+    display: flex;
+    
+    flex-wrap: wrap;
+}
+.offer div {
+    
+    color: #ffffff;
+    border-right: 1px solid #ffffff;
+    padding: 0 14px;
+
+}
+.offer div:last-child {
+    border-right: 0 !important;
+}
+.social-icons {
+    width: 25%;
+    display: flex;
+        justify-content: flex-end;
+}
+.social-icons div img {
+    width: 16px;
+    height: 16px;
+    margin-left: 12px;
+}
+/* Code For Menu Header */
+.menu-bar {
+    background-color: #ffffff !important;
+}
+.menu-bar .navbar-brand {
+    width: 80px;
+    height: 80px;
+    font-size: 30px;
+    color: var(--headingColor);
+    font-weight: bold;
+    cursor: pointer;
+}
+.menu-bar .navbar-brand img {
+    width: 100%;
+    margin-right: 16px;
+}
+.custom-menu {
+    display: flex;
+    align-items: center;
+}
+.custom-menu a {
+    margin: 0 8px;
+    font-weight: 500;
+    color: var(--headingColor);
+    text-transform: capitalize;
+}
+/* CSS For about us */
+.about-us {
+    text-align: center;
+    font-size: 18px;
+    color: var(--textColor);
+    margin: 50px 0;
+}
+/* CSS For Add Product Popup*/
+.add-product-popup {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: rgba(0,0,0, 0.6);
+}
+.add-product-popup form {
+    width: 60%;
+    background-color: #ffffff;
+    padding: 30px;
+    height: 80%;
+    overflow-y: auto;
+}
+.close-icon {
+    position: absolute;
+    right: 30px;
+    top: 30px;
+    color: #ffffff;
+    font-size: 24px;
+    cursor: pointer;
+}
